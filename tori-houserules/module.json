@@ -1,0 +1,43 @@
+{
+  "id": "tori-houserules",
+  "title": "Tori's Houserules and Erratas",
+  "description": "A collection of the houserules I've made to the PF2e system, easily implemented in foundry so I can brewrata the changes to any world I please.",
+  "url": "https://github.com/toricastleheart/tori-houserules",
+  "manifest": "https://github.com/toricastleheart/tori-houserules/releases/latest/download/module.json",
+  "download": "https://github.com/toricastleheart/tori-houserules/releases/download/1.0.0/module.zip",
+  "version": "1.0.0",
+  "authors": [
+    {"name": "toricastle"}],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [{
+      "id": "pf2e",
+      "type": "system",
+      "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+      "compatibility": {
+        "minimum": "8.0.0"
+      }
+    }]
+  },
+  "packs": [
+    {
+      "label": "Historia Houserules",
+      "type": "Item",
+      "name": "tori-module",
+      "path": "./packs/tori-module",
+      "system": "pf2e",
+      "package": "tori-houserules",
+      "banner": "systems/pf2e/assets/compendium-banner/red.webp",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "scripts": [
+    "scripts/tori-brewrata-list.js"
+  ]
+}
